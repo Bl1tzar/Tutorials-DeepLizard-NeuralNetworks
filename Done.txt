@@ -1,0 +1,18 @@
+Criar environments no anaconda e colocar o TensorFlow + GPU a funcionar localmente através do PyCharm
+Treinar um modelo sequencial com dummy data de um ensaio clinico criada e processada 
+
+----
+
+modelo sequencial - é uma pilha linear de camadas, onde cada camada tem apenas um input e output, sendo que o input de uma é o output de outra. Isto é ao contrário de um modelo com pilhas de camadas não lineares, onde as camadas podem ter multiplos inputs e outputs. 
+
+----
+
+Dummy data: 
+
+	- EXPLICAÇÃO: Um ensaio clinico foi realizado para testar uma vacina experimental. Foi retirado dados sobre os pacientes que tiveram efeitos secundários ou não e a sua idade. O objetivo do modelo é prever se um paciente irá ter efeitos secundários ou não baseado apenas na sua idade, sendo este treinado nos dados do ensaio clinico.  
+	
+	- DADOS
+
+		- Half of the participants were under 65 years old, and the other half was 65 years of age or older.
+		- The trial showed that around 95% of patients 65 or older experienced side effects from the drug, and around 95% of patients under 65 experienced no side effects, generally showing that elderly individuals were more likely to experience side effects.
+
