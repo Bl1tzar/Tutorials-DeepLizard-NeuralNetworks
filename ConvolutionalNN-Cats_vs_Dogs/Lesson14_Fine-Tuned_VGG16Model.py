@@ -19,7 +19,7 @@ vgg16_model_sequential = Sequential()
 for layer in vgg16_model.layers[:-1]:
     vgg16_model_sequential.add(layer)
 
-vgg16_model_sequential.summary()
+# vgg16_model_sequential.summary()
 
 # We define each layer as not being trainable. This means that it will freeze the weights and bias of each layer so we used the trained vgg16 model
 for layer in vgg16_model_sequential.layers:
@@ -27,3 +27,6 @@ for layer in vgg16_model_sequential.layers:
 
 # Defining the output layer to 2 predictions and which will be the only one trainable
 vgg16_model_sequential.add(Dense(units=2, activation='softmax'))
+
+# Only 8194 parameters trainable, which are from the output layer created. If the other layers weren't frozen, we would train 134.268.738 parameters!
+vgg16_model_sequential.summary()

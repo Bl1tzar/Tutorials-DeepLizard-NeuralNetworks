@@ -20,7 +20,7 @@ model = Sequential([
 # 6th output layer: output 2 nodes (cat and dog)
 
 # Network architecture
-# model.summary()
+model.summary()
 
 model.compile(optimizer=Adam(learning_rate=0.0001), loss='categorical_crossentropy', metrics=['accuracy'])
 
