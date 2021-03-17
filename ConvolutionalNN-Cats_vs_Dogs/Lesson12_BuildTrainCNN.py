@@ -1,6 +1,7 @@
 from importing_modules import *
 from Lesson10_DataPreparation import train_batches, valid_batches, plotImages
 
+
 # -- CNN using the Keras sequential model --
 model = Sequential([
     Conv2D(filters=32, kernel_size=(3, 3), activation='relu', padding='same', input_shape=(224, 224, 3)),
@@ -35,6 +36,10 @@ model.fit(x=train_batches,  # Since data is stored as a generator (with the labe
           epochs=10,
           verbose=2
           )
+
+
+
+
 
 # NOTE: THIS MODEL HAS OVERFITTING (COMPARE THE ACCURACY WITH THE VALIDATION ACCURACY)
 # To solve this problem, we need to be doing fine tuning.
